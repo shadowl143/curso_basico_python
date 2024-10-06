@@ -1,4 +1,7 @@
 #uso de ciclos.
+'''
+Ejemplo del uso  basico para el uso del while.
+'''
 def example_while():
     counter = 1
     while(counter >= 10):
@@ -7,6 +10,10 @@ def example_while():
     else:
         print("El contadortermino")
 
+'''
+Crea una arbol utilizando el ciclo while.
+utilizando una funcion.
+'''
 def three():
     caracter = "*"
     height = 10
