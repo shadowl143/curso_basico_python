@@ -44,4 +44,4 @@ def diamon(heigth:int):
         size -= 2
 
 # el tamaño del diamante es variable.
-diamon(2)
+diamon(10)
