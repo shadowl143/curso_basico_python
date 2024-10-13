@@ -64,6 +64,16 @@ def par_or_impar(limit: int):
             print(f"El numero {i} es un numero par")
         else:
             print(f"El numero {i} es un numero impar")
-def show_par__or_impar_to_file():
-    pass
-par_or_impar(20)
+            
+def show_par_or_impar(limit):
+    list_par = []
+    list_impar = []
+    for i in range(0, limit):
+        if i % 2 == 0:
+            list_par.append(i)
+        else:
+            list_impar.append(i)
+    print(f"Los numero pares son: {list_par}")
+    print(f"Los numero impares son: {list_impar}")
+
+show_par_or_impar(20)
