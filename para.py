@@ -36,6 +36,14 @@ def list_managment():
     print(join_list)
 
 '''
+las tuplas son parecidas a las lista la diferencia es que estas no se pueden cambiar son inmutables
+'''
+def example_tuple():
+    tupla = (1, 2, 3, 4)
+    # tupla[1] = 2 # esto tira un error  TypeError: 'tuple' object does not support item assignment
+    print(tupla[0]) # se muestra por medio de indices.
+
+'''
 El for es una funcion ciclomatica se utiliza cuando se conoce el momento en que esta 
 debe de detenerse a diferencia del while el cual es controlado por una accion externa, 
 '''
@@ -64,8 +72,16 @@ def par_or_impar(limit: int):
             print(f"El numero {i} es un numero par")
         else:
             print(f"El numero {i} es un numero impar")
+            
+def show_par_or_impar(limit):
+    list_par = []
+    list_impar = []
+    for i in range(0, limit):
+        if i % 2 == 0:
+            list_par.append(i)
+        else:
+            list_impar.append(i)
+    print(f"Los numero pares son: {list_par}")
+    print(f"Los numero impares son: {list_impar}")
 
-# distingue los numero pares e impares de un rango de numero
-def show_par__or_impar_to_file():
-    pass
-par_or_impar(20)
+example_tuple()
