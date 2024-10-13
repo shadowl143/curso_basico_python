@@ -42,7 +42,7 @@ debe de detenerse a diferencia del while el cual es controlado por una accion ex
 def funcion_for():
     for i in range(0, 10):
         print(i)
-
+ 
 def for_with_text():
     text = "Hello world"
     text_pass_for = ""
@@ -64,6 +64,8 @@ def par_or_impar(limit: int):
             print(f"El numero {i} es un numero par")
         else:
             print(f"El numero {i} es un numero impar")
+
+# distingue los numero pares e impares de un rango de numero
 def show_par__or_impar_to_file():
     pass
 par_or_impar(20)
